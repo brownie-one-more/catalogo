@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Brownie One More">
+  <rect width="320" height="320" fill="#f3e2c8"/>
+  <circle cx="160" cy="160" r="128" fill="#f7ecd6"/>
+  <ellipse cx="160" cy="226" rx="92" ry="12" fill="#63302a" opacity=".14"/>
+
+  <rect x="70" y="166" width="180" height="52" rx="9" fill="#4a2119"/>
+  <path d="M64 170 q11 -12 22 -2 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t22 0 t20 2 v10 q-10 8 -20 2 t-22 0 t-22 0 t-22 0 t-22 0 t-22 0 t-22 0 t-22 0 t-22 -2 z" fill="#f6e7bf" stroke="#d9c3a2" stroke-width="2" stroke-linejoin="round"/>
+  <rect x="66" y="104" width="188" height="64" rx="11" fill="#63302a"/>
+  <path d="M66 126 q94 -18 188 0" fill="none" stroke="#7a3d33" stroke-width="3"/>
+  <g fill="none" stroke="#9a5b4a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M86 118 l16 5 l12 -7 l18 6"/>
+    <path d="M150 114 l14 7 l16 -6 l14 5"/>
+    <path d="M206 120 l14 -4 l16 6"/>
+    <path d="M104 142 l20 -4 l12 6"/>
+    <path d="M176 144 l16 -5 l18 5"/>
+  </g>
+  <g fill="#63302a">
+    <circle cx="64" cy="230" r="4"/>
+    <circle cx="78" cy="238" r="2.5"/>
+    <circle cx="252" cy="232" r="3.5"/>
+    <circle cx="240" cy="240" r="2"/>
+  </g>
+</svg>

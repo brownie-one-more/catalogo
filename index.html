@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brownie One More · Mais uma série, mais uma mordida</title>
+    <meta name="description" content="Brownies com recheio generoso e opções proteicas. Veja o cardápio, monte sua sacola e faça a encomenda pelo WhatsApp.">
+    <meta name="theme-color" content="#63302a">
+    <meta property="og:title" content="Brownie One More">
+    <meta property="og:description" content="Mais uma série, mais uma mordida. Veja o cardápio e encomende pelo WhatsApp.">
+    <meta property="og:image" content="img/hero-ninho.jpg">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Kaushan+Script&amp;family=Libre+Baskerville:wght@400;700&amp;family=Nunito+Sans:wght@400;700;800&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Kaushan+Script&amp;family=Libre+Baskerville:wght@400;700&amp;family=Nunito+Sans:wght@400;700;800&amp;display=swap"></noscript>
+    <link rel="stylesheet" href="css/site.css?v=2026-10-03-7">
+    <script src="js/site.js?v=2026-10-03-7" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+    <div class="topbar__inner">
+        <a class="wordmark" href="#" aria-label="Brownie One More — início">
+            <span class="wordmark__top">BROWNIE</span>
+            <span class="wordmark__script">one more!</span>
+        </a>
+        <button class="bag-button" type="button" data-bag-open aria-label="Abrir sacola">
+            <svg class="icon" aria-hidden="true"><use href="#i-bag"></use></svg>
+            <span class="bag-button__label">Sacola</span>
+            <span class="bag-button__count" data-bag-count hidden>0</span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <section class="menu" id="cardapio" aria-labelledby="cardapio-titulo">
+        <div class="section">
+            <header class="menu__head">
+                <h1 class="menu__title" id="cardapio-titulo">
+                    <span class="menu__script">Nosso</span>
+                    <span class="menu__slab">CARDÁPIO</span>
+                </h1>
+                <p class="menu__lead">Toque num brownie para ver as fotos e os ingredientes. Adicione à sacola e envie o pedido pelo WhatsApp.</p>
+            </header>
+
+            <div class="chips" data-menu-filters role="tablist" aria-label="Categorias" hidden></div>
+            <div data-menu>
+                <noscript><p class="menu__empty">Ative o JavaScript para ver o cardápio ou chame a gente no WhatsApp.</p></noscript>
+            </div>
+            <p class="menu__note">(Aceitamos Pix e dinheiro)</p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer" id="contato">
+    <div class="section footer__inner">
+        <div>
+            <a class="wordmark wordmark--light" href="#">
+                <span class="wordmark__top">BROWNIE</span>
+                <span class="wordmark__script">one more!</span>
+            </a>
+            <p class="footer__tagline">Mais uma série, mais uma mordida.</p>
+        </div>
+        <div class="footer__contact">
+            <p class="footer__cta">Faça sua encomenda!</p>
+            <a class="footer__link" data-whatsapp-link href="#">
+                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+                <span data-whatsapp-label>WhatsApp</span>
+            </a>
+            <a class="footer__link" data-instagram-link href="#" target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg>
+                <span data-instagram-label>Instagram</span>
+            </a>
+        </div>
+    </div>
+    <p class="footer__small">© <span data-year></span> Brownie One More</p>
+</footer>
+
+<dialog class="drawer" data-bag aria-labelledby="bag-title">
+    <div class="drawer__panel">
+        <header class="drawer__head">
+            <h2 id="bag-title">Sua sacola</h2>
+            <button class="icon-button" type="button" data-bag-close aria-label="Fechar sacola">
+                <svg class="icon" aria-hidden="true"><use href="#i-x"></use></svg>
+            </button>
+        </header>
+        <div class="drawer__body">
+            <ul class="bag-list" data-bag-list></ul>
+            <p class="bag-empty" data-bag-empty>Sua sacola está vazia. Escolha seus brownies no cardápio.</p>
+
+            <form class="order-form" data-order-form hidden>
+                <label class="field">
+                    <span>Nome</span>
+                    <input type="text" name="nome" autocomplete="name" maxlength="60" placeholder="Opcional">
+                </label>
+                <label class="field">
+                    <span>Telefone com DDD</span>
+                    <input type="tel" name="telefone" autocomplete="tel-national" inputmode="tel" maxlength="16" placeholder="Opcional · (81) 98888-7777" aria-describedby="telefone-erro">
+                    <small class="field__erro" id="telefone-erro" data-phone-error hidden></small>
+                </label>
+                <label class="field">
+                    <span>Observações</span>
+                    <textarea name="obs" rows="2" maxlength="300" placeholder="Ex.: entrega no sábado à tarde"></textarea>
+                </label>
+            </form>
+        </div>
+        <footer class="drawer__foot" data-bag-foot hidden>
+            <div class="bag-total"><span>Total</span><strong data-bag-total>R$ 0,00</strong></div>
+            <button class="btn btn--whatsapp btn--block btn--lg" type="button" data-bag-send>
+                <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
+                Enviar pedido pelo WhatsApp
+            </button>
+            <button class="btn btn--ghost btn--block" type="button" data-bag-clear>Limpar sacola e começar outro pedido</button>
+        </footer>
+    </div>
+</dialog>
+
+<dialog class="sheet" data-product aria-labelledby="product-title">
+    <div class="sheet__panel" data-product-body></div>
+</dialog>
+
+<div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3z"/><path d="M8.5 10.5V7a3.5 3.5 0 0 1 7 0v3.5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.2-4.1A8.5 8.5 0 1 1 8.4 19z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 .9a4.5 4.5 0 0 1-2.8-2.8l.9-1-1-2z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8v.1"/></symbol>
+    <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+</svg>
+
+</body>
+</html>
