@@ -4,6 +4,62 @@
             "nome": "Brownies",
             "produtos": [
                 {
+                    "id": 3,
+                    "nome": "Brownie Brigadeiro",
+                    "descricao": "Brownie tradicional com recheio de chocolate.\r\nProteico: 10g.",
+                    "preco": 1000,
+                    "fotos": [
+                        {
+                            "src": "catalogo/fotos/3-ae6dfeca3122690a.jpg",
+                            "mini": "catalogo/fotos/mini/3-ae6dfeca3122690a.jpg",
+                            "descricao": ""
+                        },
+                        {
+                            "src": "catalogo/fotos/3-ef2acf166fa442de.jpg",
+                            "mini": "catalogo/fotos/mini/3-ef2acf166fa442de.jpg",
+                            "descricao": ""
+                        }
+                    ],
+                    "ingredientes": "Chocolate meio amargo, açúcar mascavo, ovos, manteiga, farinha de trigo, cacau em pó 50%, creme de leite, whey protein sabor chocolate e sal.\r\nContém glúten, lactose e ovos.",
+                    "nutricional": {
+                        "porcao": "60 g (1 unidade)",
+                        "itens": [
+                            [
+                                "Valor energético",
+                                "245 kcal"
+                            ],
+                            [
+                                "Carboidratos",
+                                "26 g"
+                            ],
+                            [
+                                "Açúcares totais",
+                                "17 g"
+                            ],
+                            [
+                                "Proteínas",
+                                "10 g"
+                            ],
+                            [
+                                "Gorduras totais",
+                                "11 g"
+                            ],
+                            [
+                                "Gorduras saturadas",
+                                "6,2 g"
+                            ],
+                            [
+                                "Fibra alimentar",
+                                "2,1 g"
+                            ],
+                            [
+                                "Sódio",
+                                "85 mg"
+                            ]
+                        ]
+                    }
+                },
+                {
                     "id": 2,
                     "nome": "Brownie Ninho",
                     "descricao": "Recheio de leite Ninho entre duas camadas de brownie.\r\nProteico: 10g.",
